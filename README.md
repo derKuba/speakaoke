@@ -1,70 +1,70 @@
 # Speakaoke
 
-Speakaoke ist eine App für PowerPoint-Karaoke. Basierend auf einem Begriff wird mit Hilfe von ChatGPT eine Präsentation generiert und automatisch gestartet. Das Projekt besteht aus einem **Frontend** mit **SolidJS** und einem **Backend** mit **Fastify**.
+Speakaoke is an app for PowerPoint karaoke. Based on a given term, it generates a presentation using ChatGPT and automatically starts the slideshow. The project consists of a **frontend** built with **SolidJS** and a **backend** powered by **Fastify**.
 
-## Inhaltsverzeichnis
+## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
 - [Backend](#backend)
-  - [Umgebungsvariablen](#umgebungsvariablen)
-  - [Starten des Servers](#starten-des-servers)
+  - [Environment Variables](#environment-variables)
+  - [Starting the Server](#starting-the-server)
 - [Frontend](#frontend)
-  - [Starten der Anwendung](#starten-der-anwendung)
-- [Technologien](#technologien)
-- [Lizenz](#lizenz)
+  - [Running the Application](#running-the-application)
+- [Technologies](#technologies)
+- [License](#license)
 
 ## Features
 
-- Generiert Präsentationen basierend auf einem Begriff
-- Nutzt ChatGPT zur Erstellung der Inhalte
-- Präsentationen werden automatisch mit **Reveal.js** abgespielt
-- Modernes Frontend mit **SolidJS**
-- Schnell und effizient durch **Fastify** im Backend
+- Generates presentations based on a given topic
+- Uses ChatGPT for content creation
+- Automatically plays presentations using **Reveal.js**
+- Modern frontend with **SolidJS**
+- Fast and efficient backend with **Fastify**
 
 ## Installation
 
-### Voraussetzungen
+### Prerequisites
 
-- **Node.js** (empfohlen: v18 oder neuer)
-- **npm** oder **yarn**
+- **Node.js** (recommended: v18 or newer)
+- **npm** or **yarn**
 
-### Repository klonen
+### Clone the Repository
 
 ```sh
-  git clone https://github.com/dein-repo/speakaoke.git
+  git clone https://github.com/your-repo/speakaoke.git
   cd speakaoke
 ```
 
 ## Backend
 
-Das Backend basiert auf **Fastify** und stellt die API für die Präsentationsgenerierung bereit.
+The backend is built with **Fastify** and provides the API for generating presentations.
 
-### Installation der Abhängigkeiten
+### Install Dependencies
 
 ```sh
   cd backend
   npm install
 ```
 
-### Umgebungsvariablen
+### Environment Variables
 
-Erstelle eine `.env` Datei im Backend-Verzeichnis und füge folgende Variablen hinzu:
+Create a `.env` file in the backend directory and add the following variables:
 
 ```
-OPENAI_API_KEY=dein_openai_api_key
+OPENAI_API_KEY=your_openai_api_key
 PORT=3000
 ```
 
-### Starten des Servers
+### Starting the Server
 
-#### Entwicklungsmodus:
+#### Development Mode:
 
 ```sh
 npm run dev
 ```
 
-#### Produktionsmodus:
+#### Production Mode:
 
 ```sh
 npm start
@@ -72,41 +72,41 @@ npm start
 
 ## Frontend
 
-Das Frontend basiert auf **SolidJS** und stellt die Benutzeroberfläche für die App bereit.
+The frontend is built with **SolidJS** and provides the user interface for the app.
 
-### Installation der Abhängigkeiten
+### Install Dependencies
 
 ```sh
   cd frontend
   npm install
 ```
 
-### Starten der Anwendung
+### Running the Application
 
-#### Entwicklungsmodus:
+#### Development Mode:
 
 ```sh
 npm run dev
 ```
 
-#### Produktionsbuild erstellen:
+#### Build for Production:
 
 ```sh
 npm run build
 ```
 
-#### Build-Vorschau anzeigen:
+#### Preview Build:
 
 ```sh
 npm run serve
 ```
 
-## Technologien
+## Technologies
 
 - **Backend:** Fastify, OpenAI API, Node.js
 - **Frontend:** SolidJS, TailwindCSS, Reveal.js
 - **Build Tools:** Vite
 
-## Lizenz
+## License
 
-Dieses Projekt ist unter der **MIT-Lizenz** veröffentlicht.
+This project is released under the **MIT License**.
