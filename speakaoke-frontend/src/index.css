@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Sicherstellen, dass Reveal.js die volle Bildschirmhöhe nutzt */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+}
+
+/* Fix für die zentrierte Darstellung der Slides */
+.reveal {
+  width: 100vw;
+  height: 100vh;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Sicherstellen, dass der Text mittig ist */
+.reveal .slides {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+/* Falls der Text dennoch zu hoch startet */
+.reveal section {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Falls Reveal.js falsche Skalierung nutzt */
+.reveal .slides > section {
+  margin: auto;
+  height: auto !important;
+}
+
+/* Falls der Text außerhalb des Viewports geht */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  max-width: 90%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+}
