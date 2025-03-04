@@ -1,6 +1,6 @@
 # Speakaoke
 
-Speakaoke is an app for PowerPoint karaoke. Based on a given term, it generates a presentation using ChatGPT and automatically starts the slideshow. The project consists of a **frontend** built with **SolidJS** and a **backend** powered by **Fastify**.
+Speakaoke is an app for presentation karaoke. Based on a given term, it generates a presentation using ChatGPT and automatically starts the slideshow. The project consists of a **frontend** built with **SolidJS** and a **backend** powered by **Fastify**.
 
 ## Table of Contents
 
